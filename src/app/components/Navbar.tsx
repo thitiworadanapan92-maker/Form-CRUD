@@ -19,13 +19,20 @@ export default function Navbar() {
 
         {/* เมนูวงดนตรี */}
         <li>
-          <Link className="navLink" href="/bands"> 
+          <Link className="navLink" href="/bands">
             วงดนตรี
           </Link>
         </li>
 
+        {/* เมนู Games */}
         <li>
-          <Link className="navLink" href="/about"> 
+          <Link className="navLink" href="/games">
+            Games
+          </Link>
+        </li>
+
+        <li>
+          <Link className="navLink" href="/about">
             เกี่ยวกับ
           </Link>
         </li>

@@ -467,3 +467,567 @@ body {
     padding: 1.25rem;
   }
 }
+
+/* =========================
+   หน้า Games
+========================= */
+
+.games-page {
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+  background: #f8fafc;
+}
+
+.games-container {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+}
+
+/* =========================
+   Games Header
+========================= */
+
+.games-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.games-badge {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+.games-heading {
+  margin: 0 0 0.5rem;
+  color: #111827;
+  font-size: 2rem;
+}
+
+.games-description {
+  margin: 0;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* =========================
+   Game Summary
+========================= */
+
+.game-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 150px;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #f3e8ff;
+}
+
+.game-summary-icon {
+  font-size: 2rem;
+}
+
+.game-summary-number {
+  display: block;
+  color: #111827;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.game-summary-text {
+  color: #6b7280;
+}
+
+/* =========================
+   Game Form
+========================= */
+
+.game-form-section {
+  margin-bottom: 2rem;
+}
+
+.game-form {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.game-form h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+/* =========================
+   Game Form Input
+========================= */
+
+.game-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.game-form .form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.game-form .form-group input,
+.game-form .form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.game-form .form-group input:focus,
+.game-form .form-group select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.game-form .form-group input[aria-invalid="true"],
+.game-form .form-group select[aria-invalid="true"] {
+  border-color: #dc2626;
+}
+
+/* =========================
+   Game List Header
+========================= */
+
+.game-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.game-list-header h2 {
+  margin: 0;
+  color: #111827;
+}
+
+.game-list-header span {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* =========================
+   Game Grid
+========================= */
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 1.5rem;
+}
+
+/* =========================
+   Game Card
+========================= */
+
+.game-card {
+  overflow: hidden;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   Game Card Top
+========================= */
+
+.game-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.game-icon {
+  font-size: 2.5rem;
+}
+
+.game-status {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ยังไม่เริ่ม */
+
+.status-not-started {
+  color: #92400e;
+  background: #fef3c7;
+}
+
+/* กำลังเล่น */
+
+.status-playing {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+/* เล่นจบแล้ว */
+
+.status-completed {
+  color: #166534;
+  background: #dcfce7;
+}
+
+/* =========================
+   Game Card Content
+========================= */
+
+.game-card-content {
+  margin-bottom: 1rem;
+}
+
+.game-title {
+  margin: 0 0 1rem;
+  color: #111827;
+  font-size: 1.3rem;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: #6b7280;
+}
+
+/* =========================
+   Game Detail Link
+========================= */
+
+.game-detail-link {
+  margin-bottom: 1rem;
+}
+
+.game-detail-link a {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.game-detail-link a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Game Card Buttons
+========================= */
+
+.game-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.game-card-footer .edit-button,
+.game-card-footer .delete-button {
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.game-card-footer .edit-button {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.game-card-footer .delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.game-card-footer .edit-button:hover {
+  background: #bfdbfe;
+}
+
+.game-card-footer .delete-button:hover {
+  background: #fecaca;
+}
+
+/* =========================
+   Game Detail Page
+========================= */
+
+.game-detail-page {
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+  background: #f8fafc;
+}
+
+.game-detail-container {
+  width: min(100%, 800px);
+  margin: 0 auto;
+}
+
+.game-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.game-detail-icon {
+  font-size: 3rem;
+}
+
+.game-detail-label {
+  margin: 0 0 0.3rem;
+  color: #7c3aed;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.game-detail-title {
+  margin: 0;
+  color: #111827;
+  font-size: 2rem;
+}
+
+/* =========================
+   Game Detail Card
+========================= */
+
+.game-detail-card {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.game-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #f9fafb;
+}
+
+.game-detail-item-icon {
+  font-size: 1.8rem;
+}
+
+.game-detail-item-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.game-detail-item strong {
+  color: #111827;
+}
+
+.game-detail-id {
+  margin-top: 1rem;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* =========================
+   Responsive Games
+========================= */
+
+@media (max-width: 700px) {
+  .games-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .game-summary {
+    width: 100%;
+  }
+
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-form {
+    padding: 1.25rem;
+  }
+
+  .game-detail-header {
+    padding: 1.25rem;
+  }
+
+  .game-detail-title {
+    font-size: 1.5rem;
+  }
+
+  .game-detail-card {
+    padding: 1.25rem;
+  }
+}
+
+/* ชั่วโมงรวม */
+.game-hours-summary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.game-hours-icon {
+  font-size: 2rem;
+}
+
+.game-hours-label {
+  display: block;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.game-hours-number {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+}
+
+/* Search + Filter */
+.game-filter-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-box,
+.status-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-box input,
+.status-filter select,
+.game-status-change select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.6rem;
+  background: white;
+}
+
+/* เปลี่ยนสถานะ */
+.game-status-change {
+  margin-top: 1rem;
+}
+
+.game-status-change label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Modal ยืนยันลบ */
+.delete-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 100;
+}
+
+.delete-modal-content {
+  width: min(90%, 400px);
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.delete-modal-content h2 {
+  margin-top: 0;
+}
+
+.delete-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.delete-confirm-button,
+.delete-cancel-button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.delete-confirm-button {
+  background: #dc2626;
+  color: white;
+}
+
+.delete-cancel-button {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .game-filter-section {
+    grid-template-columns: 1fr;
+  }
+
+  .game-hours-summary {
+    align-items: flex-start;
+  }
+}
+
